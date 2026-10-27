@@ -5,16 +5,24 @@
 **An all-in-one media, cloud gaming and homebrew hub for the PS5 — native, controller-first, fast.**
 
 ![Version](https://img.shields.io/badge/version-10.03-2f6fed)
+
 ![Firmware](https://img.shields.io/badge/PS5%20firmware-4.00%20%E2%80%93%2013.60-0070d1)
+
 ![Platform](https://img.shields.io/badge/platform-PS5%20(jailbroken)-111111)
+
 ![Licence](https://img.shields.io/badge/licence-GPL--3.0-green)
+
 [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/3Ce2jft2H)
+
 [![X](https://img.shields.io/badge/X-@InsideMatrixDEV-000000?logo=x&logoColor=white)](https://x.com/InsideMatrixDEV)
+
 [![Ko-fi](https://img.shields.io/badge/support-Ko--fi-ff5e5b)](https://ko-fi.com/insidematrixdev)
+
 [![Downloads](https://img.shields.io/github/downloads/MounirHero/PS-PLAY-App/total)](https://github.com/MounirHero/PS-PLAY-App/releases)
+
 [![Stars](https://img.shields.io/github/stars/MounirHero/PS-PLAY-App)](https://github.com/MounirHero/PS-PLAY-App/stargazers)
 
-By **InsideMatrixDev** · [Discord](https://discord.gg/3Ce2jft2H) · [X](https://x.com/InsideMatrixDEV) · [Ko-fi](https://ko-fi.com/insidematrixdev)
+By **InsideMatrixDev**
 
 </div>
 
