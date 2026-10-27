@@ -14,7 +14,7 @@
 [![Downloads](https://img.shields.io/github/downloads/MounirHero/PS-PLAY-App/total)](https://github.com/MounirHero/PS-PLAY-App/releases)
 [![Stars](https://img.shields.io/github/stars/MounirHero/PS-PLAY-App)](https://github.com/MounirHero/PS-PLAY-App/stargazers)
 
-By **InsideMatrixDev** · originally based on [ProsperoPlayer](https://github.com/KINGDKAK/ProsperoPlayer) by KINGDKAK · [Discord](https://discord.gg/3Ce2jft2H) · [X](https://x.com/InsideMatrixDEV) · [Ko-fi](https://ko-fi.com/insidematrixdev)
+By **InsideMatrixDev** · [Discord](https://discord.gg/3Ce2jft2H) · [X](https://x.com/InsideMatrixDEV) · [Ko-fi](https://ko-fi.com/insidematrixdev)
 
 </div>
 
