@@ -75,7 +75,7 @@ By **InsideMatrixDev**
 ### Music and audio
 | Feature | Details |
 |---|---|
-| **Spotify Connect** 🚧 | PS Play appears as a speaker in the Spotify app. **Work in progress** |
+| **Spotify Connect** | PS Play appears as a speaker in the Spotify app. |
 | **YouTube Music** | Library, playlists and liked songs |
 | **Music servers** | Subsonic / Navidrome, Audiobookshelf |
 | **Podcasts** | Apple catalogue, Podcast Index, gPodder (also Nextcloud) |
@@ -102,18 +102,18 @@ By **InsideMatrixDev**
 | **Download manager** | Multi-connection downloads with resume; send a link from the phone with a QR code and the PS5 downloads it (the link must point to a file with an extension, e.g. `.pkg`, `.zip`, `.exfat`) |
 | **File hosts** 🚧 | Links from file hosts; hosts protected by a Cloudflare check are passed in the PS5 browser. **Work in progress** |
 | **PKG Installer** | Install `.pkg` from USB and internal storage |
-| **Payload Hub** | Send payloads to the ELF loader |
-| **Games** | Installed games with covers, launch, cheats and saves |
+| **Payload Hub** | Download and Send payloads to the ELF loader |
+| **Games** | Installed games with covers, launch, cheat engine and saves manager |
 | **Emulators** | NES, Game Boy / Color, Master System, Mega Drive / Genesis, Atari 7800, PlayStation |
-| **PlayStation 2** | Installer for Swordpdf's PS5SX2 |
+| **PlayStation 2 and PlayStation 3** | Installers from Swordpdf's PS5SX2 and PS5SX3 |
 
 ### Files, cloud storage and reading
 | Feature | Details |
 |---|---|
 | **File manager** | Internal storage, USB, archives (extraction), copy / move / delete |
-| **Cloud storage** | Google Drive, Dropbox, MEGA, WebDAV, Synology; OneDrive 🚧 (**work in progress**) |
+| **Cloud storage** | MEGA, WebDAV, Synology; OneDrive |
 | **Torrent** | Built-in torrent client: download whatever you choose from torrents and magnet links, straight to the console |
-| **Gallery** | Photos and videos, online photo services; **send any picture to your phone** (download it over the local network); videos play in picture-in-picture too |
+| **Gallery** | Photos and videos, online photo services; **send any picture to your phone** included screenshots and screen recordings(download it over the local network); videos play in picture-in-picture too |
 | **Wallpapers** | Built-in wallpaper services to browse and set backgrounds |
 | **Books** | E-books (Project Gutenberg and others) and manga (MangaDex) |
 | **News** | Jailbreak scene news |
@@ -127,7 +127,7 @@ By **InsideMatrixDev**
 ### System and personalisation
 | Feature | Details |
 |---|---|
-| **Home** | PS5-style home, Xbox Series X dashboard style, classic grid |
+| **Home** | PS5-style home, Xbox Series X dashboard style, PS4-Style home and Nintendo Switch theme |
 | **Themes and animated backgrounds** | Several themes, animated and live backgrounds, your own pictures as wallpaper |
 | **Notification panel** | Downloads, installs and service messages in one panel, reachable from anywhere (also during cloud games) |
 | **Icon packs and avatars** | With live preview |
@@ -140,8 +140,8 @@ By **InsideMatrixDev**
 | **Built-in updater** | Check for and install new versions from inside the app (App info) |
 
 ## Requirements
-- A PS5 with a working jailbreak and an **ELF loader** (port 9021) for the features that use payloads.
-- Optional: **ShadowMount** for game images, an internet connection for online services.
+- A PS5 with jailbreak and **ELF loader** (port 9021).
+- **ShadowMount 1.6** for game images, an internet connection for online services.
 - **Tested firmware: 4.00 to 13.60.**
 
 ## Installation
@@ -153,7 +153,7 @@ By **InsideMatrixDev**
 No. PS Play is an application for consoles that are already jailbroken. It does not jailbreak anything by itself.
 
 **Which firmware does it work on?**
-It has been tested from 4.00 to 13.60. It needs a working jailbreak; some features also need an ELF loader on port 9021.
+It has been tested from 4.00 to 13.60. It needs a working jailbreak; some features also need the ELF loader.
 
 **Do I need a PC?**
 No. Everything works from the console; the phone is optional (typing, sign-ins, links and logs through QR codes).
@@ -164,7 +164,7 @@ In `/data/ps_play` on the console: settings, accounts (encrypted), caches, downl
 
 **A service will not sign in. What can I do?**
 Check the date and time of the console (a wrong clock breaks secure connections), try the sign-in through the QR code
-on the phone, then send the logs (see [Reporting a bug](#reporting-a-bug)).
+on the phone, if it doesn't work then send the logs (see [Reporting a bug](#reporting-a-bug)).
 
 **Video stutters or does not start.**
 Most often it is the network or the source. Try another source or quality; for IPTV and live streams, wired Ethernet
@@ -211,7 +211,7 @@ Planned (order may change):
 - [ ] **Shop**: automatic fallback to another source when a link is dead, and link checking before downloading.
 
 - [ ] **Browser**: faster pages and better compatibility.
-- [ ] **OneDrive**: sign-in with PS Play's own Microsoft app.
+- [x] **OneDrive**: sign-in with PS Play's own Microsoft app.
 - [x] **Crash recovery**: reopen PS Play where you were after a crash, with a one-press log report.
 - [x] **First-start detection** of the console's tools (loader, ShadowMount, storage, network); the first-start setup that uses it is being finished.
 
