@@ -1,7 +1,7 @@
 <div align="center">
 
 # PS Play
-
+<img src="assets/logo.jpg" alt="PS Play" width="520">
 **An all-in-one media, cloud gaming and homebrew hub for the PS5 — native, controller-first, fast.**
 
 </div>
