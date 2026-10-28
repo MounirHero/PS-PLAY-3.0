@@ -20,8 +20,6 @@
 
 [![Downloads](https://img.shields.io/github/downloads/MounirHero/PS-PLAY-App/total)](https://github.com/MounirHero/PS-PLAY-App/releases)
 
-[![Stars](https://img.shields.io/github/stars/MounirHero/PS-PLAY-App)](https://github.com/MounirHero/PS-PLAY-App/stargazers)
-
 By **InsideMatrixDev**
 
 </div>
