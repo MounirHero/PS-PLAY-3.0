@@ -4,6 +4,8 @@
 
 **An all-in-one media, cloud gaming and homebrew hub for the PS5 — native, controller-first, fast.**
 
+</div>
+<div align="left">
 ![Version](https://img.shields.io/badge/version-10.03-2f6fed)
 
 ![Firmware](https://img.shields.io/badge/PS5%20firmware-4.00%20%E2%80%93%2013.60-0070d1)
