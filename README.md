@@ -122,7 +122,7 @@ By **InsideMatrixDev**
 | Feature | Details |
 |---|---|
 | **Web browser** 🚧 | Built-in engine, mobile versions of sites, reader mode, ad and tracker blocking. **Work in progress**: many modern sites are slow or do not work yet |
-| **Downloads from pages** 🚧 | Files started on a page go to PS Play's download queue. **Work in progress** |
+| **Downloads from Browser** 🚧 | Files started on a page go to PS Play's download queue. **Work in progress** |
 
 ### System and personalisation
 | Feature | Details |
