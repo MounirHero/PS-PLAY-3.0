@@ -2,11 +2,15 @@
 
 <img src="assets/logo.jpg" alt="PS Play" width="520">
 
-**An all-in-one media, cloud gaming and homebrew hub for the PS5 — native, controller-first, fast.**
+**An all-in-one mediahub, cloud gaming and homebrew hub for the PS5**
 
 </div>
 
 <div align="left">
+  
+> PS Play is a native PS5 homebrew application (OpenGL, payload SDK) for jailbroken consoles. It brings streaming,
+> music, cloud gaming, a homebrew shop, emulators, a web browser and file tools together in one app with one design,
+> one controller layout and one place for every account.
   
 ![Version](https://img.shields.io/badge/version-10.03-2f6fed)
 
@@ -32,10 +36,6 @@ By **InsideMatrixDev**
 </div>
 
 ---
-
-> PS Play is a native PS5 homebrew application (OpenGL, payload SDK) for jailbroken consoles. It brings streaming,
-> music, cloud gaming, a homebrew shop, emulators, a web browser and file tools together in one app with one design,
-> one controller layout and one place for every account.
 
 ## Contents
 - [Highlights](#highlights)
