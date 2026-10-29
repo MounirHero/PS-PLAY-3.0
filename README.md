@@ -246,6 +246,7 @@ PS Play stands on the work of many people. Thank you to all of them.
 | Stremio | [Stremio](https://www.stremio.com/) addon protocol | Stremio team |
 | Nuvio | [Nuvio Portable](https://github.com/Stuey-81/Nuvio-Portable) | Stuey-81 |
 | Video decoding | [FFmpeg](https://ffmpeg.org/) | FFmpeg developers |
+| Bluetooth (Ghost-tooth) |  by StonedModder (https://github.com/StonedModder?tab=repositories)
 
 ### Emulators
 | System | Core | Author |
