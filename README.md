@@ -228,7 +228,7 @@ PS Play stands on the work of many people. Thank you to all of them.
 | **[InsideMatrixDev](https://ko-fi.com/insidematrixdev)** | **PS Play**: design, development and integration of the whole app; every feature not listed below, and the clients of the other services rebuilt and adapted for PS Play |
 | **[KINGDKAK](https://github.com/KINGDKAK)** | **[ProsperoPlayer](https://github.com/KINGDKAK/ProsperoPlayer)**, the media player PS Play was originally based on |
 | **[Swordpdf](https://github.com/Swordpdf)** | **[PS5SX2](https://github.com/Swordpdf/PS5SX2)** (PlayStation 2 on the PS5), installed from PS Play; suggested BlackBearReloaded's project as the base of PS Play Native GL |
-| **[BlackBearReloaded](https://github.com/blackbearreloaded)** | ps5-homebrew-ui (the native UI base of PS Play), [ps5-opengl](https://github.com/blackbearreloaded/ps5-opengl), [PS5 Native App Boilerplate](https://github.com/blackbearreloaded/ps5-native-app-boilerplate), [ps5-at9-converter](https://github.com/blackbearreloaded/ps5-at9-converter) |
+| **BlackBearReloaded** | ps5-homebrew-ui (the native UI base of PS Play), ps5-opengl, PS5 Native App Boilerplate, ps5-at9-converter (the original repositories are no longer online) |
 | **[Stuey-81](https://github.com/Stuey-81)** | **[Nuvio Portable](https://github.com/Stuey-81/Nuvio-Portable)**, from which PS Play's Stremio and Nuvio support were derived |
 | **[nexgen999](https://github.com/nexgen999)** | The Shop's **PS5 payload catalogue** ([evoX-CoreOS](https://github.com/nexgen999/evoX-CoreOS)) and **homebrew app catalogue** ([PS5-Repository-List](https://github.com/nexgen999/PS5-Repository-List)) |
 
@@ -236,8 +236,9 @@ PS Play stands on the work of many people. Thank you to all of them.
 | Component in PS Play | Origin | Author |
 |---|---|---|
 | Xbox Cloud Gaming stream (WebRTC session, input, audio/video) | [PSBox Cloud Gaming — xbox-cloud-gaming-ps5](https://github.com/RafaelNGP/xbox-cloud-gaming-ps5) | RafaelNGP |
-| GeForce NOW client | [OpenNOW](https://github.com/OpenCloudGaming/OpenNOW), [OpenNOW-PS5](https://github.com/OpenCloudGaming/OpenNOW-PS5) / [Portablelle/OpenNOW-PS5](https://github.com/Portablelle/OpenNOW-PS5) | OpenCloudGaming, Portablelle |
-| Moonlight client | The open [Moonlight](https://moonlight-stream.org/) game streaming protocol (works with [Sunshine](https://github.com/LizardByte/Sunshine)) | Moonlight Game Streaming Project; LizardByte |
+| GeForce NOW client | [OpenNOW-PS5](https://github.com/OpenCloudGaming/OpenNOW-PS5) (original: [Portablelle/OpenNOW-PS5](https://github.com/Portablelle/OpenNOW-PS5)), from [OpenNOW](https://github.com/OpenCloudGaming/OpenNOW) | Portablelle, OpenCloudGaming |
+| Moonlight client | [moonlight-common-c](https://github.com/moonlight-stream/moonlight-common-c), the open [Moonlight](https://moonlight-stream.org/) game streaming protocol (works with [Sunshine](https://github.com/LizardByte/Sunshine)) | Moonlight Game Streaming Project; LizardByte |
+| Remote desktop (VNC) | [LibVNCClient](https://github.com/LibVNC/libvncserver) | LibVNC contributors |
 
 ### Media and music
 | Component in PS Play | Origin | Author |
@@ -245,25 +246,36 @@ PS Play stands on the work of many people. Thank you to all of them.
 | Spotify Connect (Spot5) | [cspot](https://github.com/feelfreelinux/cspot), via the fork by [philippe44](https://github.com/philippe44/cspot) | feelfreelinux & alufers; philippe44; PS5 port **Spot5** by [abhi245y](https://github.com/abhi245y) |
 | Stremio | [Stremio](https://www.stremio.com/) addon protocol | Stremio team |
 | Nuvio | [Nuvio Portable](https://github.com/Stuey-81/Nuvio-Portable) | Stuey-81 |
-| Video decoding | [FFmpeg](https://ffmpeg.org/) | FFmpeg developers |
-| Bluetooth (Ghost-tooth) |  by StonedModder (https://github.com/StonedModder?tab=repositories)
+| Audio and video decoding | [FFmpeg](https://ffmpeg.org/), with [x264](https://code.videolan.org/videolan/x264) | FFmpeg developers; VideoLAN |
+| AirPlay receiver | [UxPlay](https://github.com/FDH2/UxPlay), from [RPiPlay](https://github.com/FD-/RPiPlay) and [shairplay](https://github.com/juhovh/shairplay) | F. Duncanh; Florian Draschbacher; Juho Vähä-Herttua |
+| Android Link (phone apps on the TV) | [scrcpy](https://github.com/Genymobile/scrcpy) server; the [adb](https://android.googlesource.com/platform/packages/modules/adb) protocol | Genymobile; Android Open Source Project |
+| Torrent downloads | [libtransmission](https://github.com/transmission/transmission) | Transmission project |
+| Song recognition | [Chromaprint](https://github.com/acoustid/chromaprint) | Lukáš Lalinský |
+| Bluetooth audio | [FGG-PlayPods](https://github.com/FGGstore/FGG-PlayPods), [FGG-PlayPods-GUI](https://github.com/menfis911/FGG-PlayPods-GUI) | StonedModder (original project); FGGstore; menfis911 |
 
 ### Emulators
 | System | Core | Author |
 |---|---|---|
 | NES | [FCEUmm](https://github.com/libretro/libretro-fceumm) | FCEU / FCEUmm and libretro contributors |
-| Game Boy / Color | [Gambatte](https://github.com/libretro/gambatte-libretro) | sinamas and contributors |
-| Master System, Mega Drive / Genesis | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX) | Eke-Eke and contributors |
+| Game Boy / Color | [SameBoy](https://github.com/LIJI32/SameBoy) (default), [fixGB](https://github.com/FIX94/fixGB) | Lior Halphon; FIX94 |
+| Master System / Game Gear / SG-1000 | [Gearsystem](https://github.com/drhelius/Gearsystem) (default), [SMS Plus GX](https://github.com/libretro/smsplus-gx) | Ignacio Sanchez; Charles MacDonald, gameblabla |
+| Mega Drive / Genesis | [ClownMDEmu](https://github.com/Clownacy/clownmdemu-core) | Clownacy |
 | Atari 7800 | [ProSystem](https://github.com/libretro/prosystem-libretro) | Greg Stanton and contributors |
 | PlayStation | [PCSX ReARMed](https://github.com/libretro/pcsx_rearmed) | PCSX / PCSX ReARMed contributors |
 | PlayStation 2 (installer) | [PS5SX2](https://github.com/Swordpdf/PS5SX2), built on [PCSX2](https://github.com/PCSX2/pcsx2) | Swordpdf; PCSX2 team |
+| RetroArch (launched from PS Play) | [PS5 RetroArch](https://github.com/mihawk-99/PS5_RetroArch) | mihawk-99; libretro team |
+| Achievements | [rcheevos](https://github.com/RetroAchievements/rcheevos) | RetroAchievements |
+
+[Gambatte](https://github.com/libretro/gambatte-libretro) and [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX)
+stay in the source for personal builds only: their licences are not compatible with the GPL-3.0, so they are not part of
+the published builds.
 
 ### Browser
 | Component | Origin | Author |
 |---|---|---|
-| Browser engine | [Northstar](https://github.com/nordstjernen-web/northstar-browser) | Andreas Røsdal |
+| Browser engine | [Northstar](https://github.com/nordstjernen-web/northstar-web-browser) | Andreas Røsdal |
 | JavaScript | [QuickJS](https://bellard.org/quickjs/) | Fabrice Bellard, Charlie Gordon |
-| HTML parser | [lexbor](https://github.com/lexbor/lexbor) | lexbor contributors |
+| HTML / CSS layout | [litehtml](https://github.com/litehtml/litehtml) | Yuri Kobets and contributors |
 | Networking | [libcurl](https://curl.se/), [OpenSSL](https://www.openssl.org/) | curl and OpenSSL projects |
 
 ### Platform and tools
@@ -274,9 +286,12 @@ PS Play stands on the work of many people. Thank you to all of them.
 | SharpProspero, UFS2Tool | [SharpProspero](https://github.com/SvenGDK/SharpProspero), [UFS2Tool](https://github.com/SvenGDK/UFS2Tool) | SvenGDK |
 | MkPFS | [MkPFS](https://github.com/PSBrew/MkPFS) | PSBrew |
 | **Voice commands (speech recognition)** | [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (OpenAI Whisper, on-device) | Georgi Gerganov and contributors; OpenAI (Whisper model) |
-| Spotify discovery (mDNS) | [mdnsd / mdnssvc](https://github.com/troglobit/mdnsd) | Tobias Blomberg and contributors |
+| Text to speech | [eSpeak NG](https://github.com/espeak-ng/espeak-ng) | eSpeak NG contributors |
+| Backport, packages and saves | [ps5-backport-toolkit](https://github.com/cherryduck/ps5-backport-toolkit), [BackPork](https://github.com/BestPig/BackPork), [LibOrbisPkg](https://github.com/OpenOrbis/LibOrbisPkg), [ps5-sd-tool](https://github.com/c0w-ar/ps5-sd-tool), [ps5upload](https://github.com/phantomptr/ps5upload) | cherryduck; BestPig; OpenOrbis; c0w-ar; phantomptr |
+| Game compression (AMPR) | [PS5 LZ4 Game Compressor](https://github.com/gameboy829/PS5-LZ4-Game-Compressor), [ampr_emu](https://github.com/drakmor/ampr_emu) | gameboy829; drakmor |
+| Spotify discovery (mDNS) | [mdnsd / mdnssvc](https://github.com/troglobit/mdnsd) | Joachim Wiberg and contributors |
 | QR codes | Minimal QR encoder, based on [QR Code generator](https://www.nayuki.io/page/qr-code-generator-library) | Project Nayuki |
-| Fonts | [Inter](https://github.com/rsms/inter), [Montserrat](https://github.com/JulietaUla/Montserrat) | Rasmus Andersson; Julieta Ulanovsky |
+| Fonts | [Inter](https://github.com/rsms/inter), [Montserrat](https://github.com/JulietaUla/Montserrat), [Bebas Neue](https://github.com/dharmatype/Bebas-Neue), [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts), [Patrick Hand](https://fonts.google.com/specimen/Patrick+Hand), [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) | Rasmus Andersson; Julieta Ulanovsky; Dharma Type; DejaVu team; Patrick Wagesreiter; CodeMan38 |
 | Font baking, audio decoding | [stb](https://github.com/nothings/stb) | Sean Barrett |
 
 ### Online services
@@ -293,9 +308,20 @@ If PS Play is useful to you, you can support its development:
 - **Solana (SOL)**: `Esd5LdC6HjvHYWJrufrH2FessgLRyupHVSKbHdLC3Bna`
 
 ## Licences
-PS Play includes components under different licences, among them **GPL-3.0** (cspot / Spot5, OpenNOW, PSBox Cloud
-Gaming, Northstar), MIT, BSD and OFL (fonts). Where GPL code is included, PS Play's corresponding source code is
-published under the same terms. <!-- TODO: PS Play's own licence -->
+PS Play is free software: **Copyright (C) 2026 InsideMatrixDev**, licensed under the **GNU General Public License,
+version 3 or (at your option) any later version** — see [LICENSE](LICENSE). It is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.
+
+PS Play links against third-party GPL components — among them FFmpeg (built with x264), Northstar, Spot5 / cspot,
+OpenNOW-PS5, PSBox Cloud Gaming, moonlight-common-c, eSpeak NG and UxPlay — and this is why PS Play as a whole is
+licensed under the GPL-3.0-or-later. Its other components keep their own licences (MIT, BSD, Apache-2.0, LGPL, MPL-2.0,
+and OFL for the fonts). Every component and its licence is listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md),
+and the complete corresponding source is published so anyone can study, modify and rebuild PS Play under these terms.
+
+**The name.** "PS Play" is simply the name this project uses; it is not claimed as a trademark. If you publish a modified
+version or a fork, please give it a different name, so users are not led to believe it is this project or is endorsed
+by its author. This request does not restrict any right the GPL grants over the source code.
 
 ## Disclaimer
 PS Play is an independent homebrew project, not affiliated with Sony Interactive Entertainment, Microsoft, NVIDIA,
