@@ -145,6 +145,10 @@ By **InsideMatrixDev**
 - **Tested firmware: 4.00 to 13.60.**
 
 ## Installation
+### The app folder in this repository (`PSPL47000/`)
+The folder is the app as it goes on the console. `eboot.bin` is stored with Git LFS: clone with git-lfs, or download it from its own page.
+`sce_module/libc.prx` is **not included**: it is a Sony system module and cannot be redistributed here. Copy it into `PSPL47000/sce_module/` from another PS5 homebrew app that ships one, then copy the folder to the console.
+
 <!-- TODO: installation steps (folder copy / PKG), first start, where data is kept (/data/ps_play) -->
 
 ## FAQ
