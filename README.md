@@ -12,7 +12,7 @@
 > music, cloud gaming, a homebrew shop, emulators, a web browser and file tools together in one app with one design,
 > one controller layout and one place for every account.
   
-![Version](https://img.shields.io/badge/version-10.03-2f6fed) ![Firmware](https://img.shields.io/badge/PS5%20firmware-4.00%20%E2%80%93%2013.60-0070d1) ![Platform](https://img.shields.io/badge/platform-PS5%20(jailbroken)-111111) ![Licence](https://img.shields.io/badge/licence-GPL--3.0-green)
+![Version](https://img.shields.io/badge/version-1.005%20RC%20(build%20101)-2f6fed) ![Firmware](https://img.shields.io/badge/PS5%20firmware-4.00%20%E2%80%93%2013.60-0070d1) ![Platform](https://img.shields.io/badge/platform-PS5%20(jailbroken)-111111) ![Licence](https://img.shields.io/badge/licence-GPL--3.0-green)
 
 [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/3Ce2jft2H) [![X](https://img.shields.io/badge/X-@InsideMatrixDEV-000000?logo=x&logoColor=white)](https://x.com/InsideMatrixDEV)
 
@@ -28,128 +28,143 @@ By **InsideMatrixDev**
 
 ## Contents
 - [Highlights](#highlights)
+- [What's new in 1.005](#whats-new-in-1005)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [FAQ](#faq)
 - [Reporting a bug](#reporting-a-bug)
-- [Support the project](#support-the-project)
 - [Privacy and security](#privacy-and-security)
-- [Roadmap](#roadmap)
 - [Credits and origins](#credits-and-origins)
-- [Licences](#licences)
-- [Disclaimer](#disclaimer)
 
 ## Highlights
-- **One app instead of twenty**: video, music, cloud gaming, shop, emulators, browser and file tools share one interface.
-- **Built for the controller**: every page works with the pad; text can also be typed from the phone.
-- **Full-screen sign-in pages** for every service (form, code + QR, or step by step), credentials encrypted with a
-  key tied to the console.
-- **Phone companion**: a web panel on your network for typing, sign-ins, logs and link sharing.
-- **QR codes everywhere**: wherever you would type or sign in, a QR code opens the right page on your phone, so text,
-  passwords, keys and settings are entered from the phone instead of the on-screen keyboard.
-- **Themes**: PS5-style home, Xbox Series X dashboard style, classic grid, animated backgrounds, icon packs and avatars.
-- **Picture-in-picture everywhere**: keep any video playing in a corner while you use the rest of the app, even
-  (muted) while you play in the cloud.
-- **Background music**: the music player and the radio keep playing while you use any other part of the app.
+- **One app instead of twenty**: video, music, cloud gaming, games and homebrew tools, a social space, files and
+  downloads share one interface, one controller layout and one place for every account.
+- **Built for the controller and the TV**: every page works with the pad; text can also be typed from the phone.
+- **Your phone as a companion**: a web panel on your network (and a QR code wherever you would type or sign in).
+- **Seven home themes plus the PS5 one**, icon packs, live wallpapers and per-theme options.
+- **Games and homebrew tools in one place**: PKG Matrix, a cheat engine, save backups, emulators and a homebrew
+  shop that reads third-party catalogues.
+- **Background playback and picture-in-picture**: music, radio and Spotify keep playing while you use the rest of
+  the app; any video can keep playing in a corner.
+
+## What's new in 1.005
+- **Spotify Connect**: the PS5 shows up as "PS Play" in the Spotify app on your phone; the music plays on the
+  console, with what is playing, play / pause / next and your Home and Library on the TV (Spotify Premium).
+- **PS Play Social**: friends, private chats, groups and a global chat, reactions, replies, read receipts, file
+  sharing, a lobby showing what your friends are doing, and the web version at social.insidematrixdev.com.
+- **Redesigned settings**: nine clear sections (General, Appearance, Playback, Audio, Devices, Accounts, Content,
+  System, Storage), a search, and an Accounts section where every service shows its sign-in state.
+- **PKG Matrix**: every app folder, image and PKG on every drive, with the tools to build images and packages.
+- **Cheats**: a cheat engine for the game you are playing, with the GoldHEN and etaHEN PS5 databases.
+- **New web panel**: a control panel for the phone with your games, media, files, downloads and tools.
+- **Receivers**: DLNA, AirPlay, Miracast and YouTube casting, with the console's own name on your network.
+- **Home themes**: Nintendo Switch (dark / light), PS4, Steam and Inferno themes, plus wallpaper dimming, an
+  accent tint and dark edges for every theme.
 
 ## Features
 
-> Features marked **🚧 Work in progress** are included and usable, but still being improved: expect rough edges.
-
 ### Video and streaming
-| Feature | Details |
-|---|---|
-| **YouTube** | Browse, search, play; autoplay of the next video; picture-in-picture |
-| **Stremio** | Addons, catalogues, films and series |
-| **Nuvio** | Streams and catalogues |
-| **Live platforms** | Twitch, Kick, Dailymotion, Odysee |
-| **Media servers** | Jellyfin, Emby, Plex, Kodi |
-| **IPTV** | M3U playlists |
-| **DLNA** | Discovery and playback of local servers |
-| **Tracking** | Trakt, Simkl, AniList, MDBList |
-| **Debrid** | Real-Debrid, AllDebrid, TorBox, Premiumize |
-| **Player** | Hardware video decoding, subtitles (local and online), audio tracks, resume |
-| **Picture-in-picture** | Works with every media playback: all videos, IPTV channels, films and series, streams, and videos from the Gallery. Playback continues in a corner while you browse the app, and keeps going muted during cloud gaming (Xbox Cloud, GeForce NOW, Moonlight) |
+- YouTube with its own TV sign-in (QR) and your library; Twitch, Kick, Vimeo, Dailymotion and PeerTube links.
+- Movies and series through **Stremio and Nuvio add-ons** and their catalogues, with **Real-Debrid, AllDebrid,
+  TorBox and Premiumize** (sign-in with a code or QR), Trakt, Simkl, AniList and MDBList.
+- Media servers: **Plex, Jellyfin, Emby, Kodi**; IPTV with **Xtream Codes**, **Tvheadend** and free TV channels.
+- Hardware video decoding, HDR tone mapping, upscaling, subtitles (with automatic translation and subtitles from
+  the audio), skip intro, resume, next episode and a daily limit for children.
+- **Recents** with a frame or cover for everything you played.
 
 ### Music and audio
-| Feature | Details |
-|---|---|
-| **Spotify Connect** | PS Play appears as a speaker in the Spotify app. |
-| **YouTube Music** | Library, playlists and liked songs |
-| **Music servers** | Subsonic / Navidrome, Audiobookshelf |
-| **Podcasts** | Apple catalogue, Podcast Index, gPodder (also Nextcloud) |
-| **Radio** | Radio Browser stations, RaiPlay Sound |
-| **Free music** | Jamendo |
-| **Scrobbling** | Last.fm and ListenBrainz |
-| **Music player** | Full-featured player: library, albums, artists, playlists, covers, lyrics, tags, shuffle and repeat, equalizer, internet radio |
-| **Background playback** | Music and radio keep playing while you use any other feature of the app |
+- **Spotify Connect** (see above) and **YouTube Music** with its own account: your library, playlists and liked songs.
+- Radio stations, podcasts (Podcast Index, gpodder / Nextcloud), Jamendo, **Navidrome / Subsonic** and
+  **Audiobookshelf**; scrobbling to Last.fm and ListenBrainz; song recognition with AcoustID.
+- Equaliser, night mode, Bluetooth audio devices, controller audio and a sleep timer.
 
 ### Cloud gaming and remote play
-| Feature | Details |
-|---|---|
-| **Xbox Cloud Gaming** | Full game grid, queue and connection on the same page, streaming in PS Play |
-| **GeForce NOW** | Catalogue and library, server search and queue on the same page |
-| **Moonlight** | Stream games from your PC (Sunshine / GeForce Experience) |
-| **Steam** | Your Steam library, played through Moonlight |
-| **Remote Desktop** | VNC client |
+- **Xbox Cloud Gaming** and **GeForce NOW**; **Moonlight** for the games on your PC; a remote desktop (VNC).
+- Picture-in-picture: keep a video playing (muted) while you play in the cloud.
 
-### Games, shop and homebrew
-| Feature | Details |
-|---|---|
-| **Shop** | Homebrew and game catalogues by section, download queue, automatic install |
-| **Custom catalogues** | Add your own catalogues to the Shop: your personal apps and games, or catalogues from other PS5 projects |
-| **Download manager** | Multi-connection downloads with resume; send a link from the phone with a QR code and the PS5 downloads it (the link must point to a file with an extension, e.g. `.pkg`, `.zip`, `.exfat`) |
-| **File hosts** 🚧 | Links from file hosts; hosts protected by a Cloudflare check are passed in the PS5 browser. **Work in progress** |
-| **PKG Installer** | Install `.pkg` from USB and internal storage |
-| **Payload Hub** | Download and Send payloads to the ELF loader |
-| **Games** | Installed games with covers, launch, cheat engine and saves manager |
-| **Emulators** | NES, Game Boy / Color, Master System, Mega Drive / Genesis, Atari 7800, PlayStation |
-| **PlayStation 2 and PlayStation 3** | Installers from Swordpdf's PS5SX2 and PS5SX3 |
+### Games and homebrew
+- **Game library** with covers and a page for every game: launch, cheats, saves and information; "return to PS Play
+  after a game".
+- **PKG Matrix**: app folders, game images and PKG files on every drive (internal and USB). Build a **.ffpkg** image
+  (UFS2, for ShadowMountPlus), **backport** an image to your console's firmware, and build a **PS4 game as a .pkg**.
+- **Cheat engine**: turn cheats on and off from a game's page while the game runs (the original bytes come back
+  when it stops). Databases from **GoldHEN** and **etaHEN PS5**, updated every week, only for your game version if
+  you like, and your own cheat files.
+- **Saves**: background backups, back up everything now, export and import decrypted saves, edit them with a hex
+  editor, backups on USB.
+- **Homebrew shop** with **third-party catalogues**: add any compatible catalogue from a link (NexGen and others),
+  install and update homebrew, and keep the payload catalogue up to date.
+- **Payloads**: send ELF payloads to the console's loader, with their own catalogue and updates.
+- **Emulators**: PS1 and PS2 Classics (with a guide), a PS3 emulator, retro systems and RetroAchievements.
+- **File host downloads**: when a file host puts a browser check (Cloudflare) in front of a download, you pass it in
+  the PS5 browser and a small scanner payload picks up the session, so the download continues in PS Play.
 
-### Files, cloud storage and reading
-| Feature | Details |
-|---|---|
-| **File manager** | Internal storage, USB, archives (extraction), copy / move / delete |
-| **Cloud storage** | MEGA, WebDAV, Synology; OneDrive |
-| **Torrent** | Built-in torrent client: download whatever you choose from torrents and magnet links, straight to the console |
-| **Gallery** | Photos and videos, online photo services; **send any picture to your phone** included screenshots and screen recordings(download it over the local network); videos play in picture-in-picture too |
-| **Wallpapers** | Built-in wallpaper services to browse and set backgrounds |
-| **Books** | E-books (Project Gutenberg and others) and manga (MangaDex) |
-| **News** | Jailbreak scene news |
+### PS Play Social
+- Friends and friend requests, private chats (from friends, or from nobody), groups (public, private, with an
+  invite code) and the global chat.
+- Reactions, replies, read receipts (that you can turn off), mute a chat, delete a chat for yourself only.
+- Share files with friends, see what they are playing ("what I am playing", optional), notifications.
+- The same account on the web at **social.insidematrixdev.com**, with "Your PS5": your console's web panel one tap away.
+- Community rules and moderation (reports, bans); the rules state what moderators can read.
 
-### Browser
-| Feature | Details |
-|---|---|
-| **Web browser** 🚧 | Built-in engine, mobile versions of sites, reader mode, ad and tracker blocking. **Work in progress**: many modern sites are slow or do not work yet |
-| **Downloads from Browser** 🚧 | Files started on a page go to PS Play's download queue. **Work in progress** |
+### Phone, network and receivers
+- **Web panel** on your network: your games and what to continue, media, files (browse, upload, download),
+  downloads, payloads, logs, the console's keyboard and pad, and app updates.
+- **Receivers**: DLNA renderer, AirPlay, Miracast and YouTube casting, each one on or off, with the console's
+  name on your network.
+- **Android Link**: your Android phone and the console working together.
+- Network test and the network speed in the top bar.
 
-### System and personalisation
-| Feature | Details |
-|---|---|
-| **Home** | PS5-style home, Xbox Series X dashboard style, PS4-Style home and Nintendo Switch theme |
-| **Themes and animated backgrounds** | Several themes, animated and live backgrounds, your own pictures as wallpaper |
-| **Notification panel** | Downloads, installs and service messages in one panel, reachable from anywhere (also during cloud games) |
-| **Icon packs and avatars** | With live preview |
-| **Phone web panel** | Typing, sign-ins, logs, link sharing |
-| **QR codes across the app** | Scan to type text, sign in to services, paste keys and links, manage the app and download logs from the phone |
-| **Voice commands** | Open pages and services by voice |
-| **Search, screensaver** | Across the whole app |
-| **Accessibility** | High contrast, reduced motion, larger text |
-| **Diagnostics** | Logs, crash reports and recovery, self test, system detection, logs downloadable from the phone |
-| **Built-in updater** | Check for and install new versions from inside the app (App info) |
+### Files, cloud storage and downloads
+- File manager for the internal storage and USB drives.
+- **OneDrive, Dropbox, Google Drive, MEGA, WebDAV / Nextcloud** and **Synology**.
+- Downloads with a schedule, a speed limit, a mirror of your choice, simultaneous downloads and rest mode at the
+  end; torrents built in, plus **qBittorrent, Transmission, Prowlarr, Jackett, Sonarr and Radarr**.
+
+### Reading and photos
+- **MangaDex** (no account), **Komga, Kavita** and **Calibre-Web / OPDS** catalogues; ebooks and comics.
+- Photos from **Immich**, **NASA** and **Unsplash** (also for the screensaver and as wallpapers), the gallery of
+  your console and USB drives, IP cameras (RTSP and ONVIF).
+
+### Home themes and personalisation
+- **Home themes**: PS5 (default), **PS4**, **PS3 XMB** (the wave, drawn or as video, in your colour),
+  **Xbox Series** (with ConsoleDash wallpapers), **Nintendo Switch** (dark or light), **Steam**, **Shelf** and
+  **Inferno** (fire colour and embers).
+- **Theme settings** for every theme: background, accent colour, theme sounds, wallpaper dimming, accent tint and
+  dark edges, plus each theme's own options (tile size, card count, wave colour...).
+- **Icon packs**, icon size and shape, avatars, live wallpapers (particles, Matrix, music and more), ready-made
+  themes and "save the look as a theme".
+
+### Settings, accessibility and family
+- Settings in nine sections with search; every service's account in one place.
+- Screen reader, voice commands (hold L3, with your own commands), high contrast, text size and reduced motion.
+- Parental controls (PIN, daily video limit); controller vibration, adaptive triggers and light bar.
+
+### System
+- In-app updates from the web panel, and **go back to the previous version** if an update misbehaves.
+- Settings backup and restore, storage overview, cache and covers, power saving and a photo screensaver.
+- Logs you can send to your phone in one tap, detailed logs, statistics and plugins.
 
 ## Requirements
-- A PS5 with jailbreak and **ELF loader** (port 9021).
-- **ShadowMount 1.6** for game images, an internet connection for online services.
+- A PS5 with jailbreak and an **ELF loader** on port 9021 (needed by payloads, the cheat engine, saves and Spotify's
+  pairing).
+- **ShadowMountPlus** for .ffpkg images and game images; an internet connection for online services.
+- **Spotify Premium** for Spotify Connect.
 - **Tested firmware: 4.00 to 13.60.**
 
 ## Installation
-### The app folder in this repository (`PSPL47000/`)
-The folder is the app as it goes on the console. `eboot.bin` is stored with Git LFS: clone with git-lfs, or download it from its own page.
-`sce_module/libc.prx` is **not included**: it is a Sony system module and cannot be redistributed here. Copy it into `PSPL47000/sce_module/` from another PS5 homebrew app that ships one, then copy the folder to the console.
+- **As an image**: copy `LAPY47000.ffpkg` (from the release) into `/data/homebrew/`; ShadowMountPlus mounts it.
+- **As a folder**: copy the `LAPY47000` folder (from the release, or from this repository) to the console.
+- **Updates**: upload the new image from the web panel (Update), then exit PS Play from its Home (Circle, Exit) and
+  open it again, so the new image is mounted.
+- Your data lives in `/data/ps_play` (settings, accounts, caches and logs).
 
-<!-- TODO: installation steps (folder copy / PKG), first start, where data is kept (/data/ps_play) -->
+### The app folder in this repository (`LAPY47000/`)
+The folder is the app as it goes on the console. `eboot.bin` is stored with Git LFS: clone with git-lfs, or download
+it from its own page.
+`sce_module/libc.prx` is **not included**: it is a Sony system module and cannot be redistributed here. Copy it into
+`LAPY47000/sce_module/` from another PS5 homebrew app that ships one, then copy the folder to the console.
 
 ## FAQ
 
