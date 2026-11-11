@@ -30,6 +30,7 @@ By **InsideMatrixDev**
 - [Highlights](#highlights)
 - [What's new in 1.005](#whats-new-in-1005)
 - [Features](#features)
+- [Helpers](#helpers-the-small-programs-ps-play-runs-for-you)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [FAQ](#faq)
@@ -42,24 +43,30 @@ By **InsideMatrixDev**
   downloads share one interface, one controller layout and one place for every account.
 - **Built for the controller and the TV**: every page works with the pad; text can also be typed from the phone.
 - **Your phone as a companion**: a web panel on your network (and a QR code wherever you would type or sign in).
-- **Seven home themes plus the PS5 one**, icon packs, live wallpapers and per-theme options.
-- **Games and homebrew tools in one place**: PKG Matrix, a cheat engine, save backups, emulators and a homebrew
+- **PS Play Social**: friends, private chats, groups and what your friends are playing - on the console and on the
+  web at social.insidematrixdev.com.
+- **Five home themes plus the PS5 one**, icon packs, live wallpapers and per-theme options.
+- **Games and homebrew tools in one place**: PKG Matrix *(beta)*, a cheat engine, save backups, emulators and a homebrew
   shop that reads third-party catalogues.
 - **Background playback and picture-in-picture**: music, radio and Spotify keep playing while you use the rest of
-  the app; any video can keep playing in a corner.
+  PS Play; any video can keep playing in a corner. Music after you leave PS Play (the background music helper) is
+  *work in progress*.
+
+> **Labels used below** - *beta*: it works, but it may not work yet on every console, network or setup;
+> *work in progress*: partly there, not finished; *coming soon*: planned, not in the app yet.
 
 ## What's new in 1.005
 - **Spotify Connect**: the PS5 shows up as "PS Play" in the Spotify app on your phone; the music plays on the
   console, with what is playing, play / pause / next and your Home and Library on the TV (Spotify Premium).
-- **PS Play Social**: friends, private chats, groups and a global chat, reactions, replies, read receipts, file
-  sharing, a lobby showing what your friends are doing, and the web version at social.insidematrixdev.com.
+- **PS Play Social**: friends, private chats, groups and a global chat, reactions, replies, read receipts, sharing
+  saves, cheats and themes, a lobby showing what your friends are doing, and the web version at social.insidematrixdev.com.
 - **Redesigned settings**: nine clear sections (General, Appearance, Playback, Audio, Devices, Accounts, Content,
   System, Storage), a search, and an Accounts section where every service shows its sign-in state.
-- **PKG Matrix**: every app folder, image and PKG on every drive, with the tools to build images and packages.
+- **PKG Matrix** *(beta)*: every app folder, image and PKG on every drive, with the tools to build images and packages.
 - **Cheats**: a cheat engine for the game you are playing, with the GoldHEN and etaHEN PS5 databases.
 - **New web panel**: a control panel for the phone with your games, media, files, downloads and tools.
-- **Receivers**: DLNA, AirPlay, Miracast and YouTube casting, with the console's own name on your network.
-- **Home themes**: Nintendo Switch (dark / light), PS4, Steam and Inferno themes, plus wallpaper dimming, an
+- **Receivers** *(beta)*: DLNA, AirPlay, Miracast, YouTube Cast and FCast, with the console's own name on your network.
+- **Home themes**: Nintendo Switch (dark / light), PS4 and Inferno themes, plus wallpaper dimming, an
   accent tint and dark edges for every theme.
 
 ## Features
@@ -69,8 +76,10 @@ By **InsideMatrixDev**
 - Movies and series through **Stremio and Nuvio add-ons** and their catalogues, with **Real-Debrid, AllDebrid,
   TorBox and Premiumize** (sign-in with a code or QR), Trakt, Simkl, AniList and MDBList.
 - Media servers: **Plex, Jellyfin, Emby, Kodi**; IPTV with **Xtream Codes**, **Tvheadend** and free TV channels.
-- Hardware video decoding, HDR tone mapping, upscaling, subtitles (with automatic translation and subtitles from
+- Playback with FFmpeg (software decoding), HDR tone mapping, upscaling, subtitles (with automatic translation and subtitles from
   the audio), skip intro, resume, next episode and a daily limit for children.
+- **Hardware video decoding** *(beta, off by default)*: 8-bit H.264 and HEVC through the console's video decoder, turned
+  on in Settings > Playback; everything else (VP9, AV1, 10-bit) stays on FFmpeg.
 - **Recents** with a frame or cover for everything you played.
 
 ### Music and audio
@@ -78,6 +87,8 @@ By **InsideMatrixDev**
 - Radio stations, podcasts (Podcast Index, gpodder / Nextcloud), Jamendo, **Navidrome / Subsonic** and
   **Audiobookshelf**; scrobbling to Last.fm and ListenBrainz; song recognition with AcoustID.
 - Equaliser, night mode, Bluetooth audio devices, controller audio and a sleep timer.
+- **Background music helper** *(work in progress)*: the music keeps playing when you leave PS Play, but its sound
+  does not come out of the console yet.
 
 ### Cloud gaming and remote play
 - **Xbox Cloud Gaming** and **GeForce NOW**; **Moonlight** for the games on your PC; a remote desktop (VNC).
@@ -86,17 +97,28 @@ By **InsideMatrixDev**
 ### Games and homebrew
 - **Game library** with covers and a page for every game: launch, cheats, saves and information; "return to PS Play
   after a game".
-- **PKG Matrix**: app folders, game images and PKG files on every drive (internal and USB). Build a **.ffpkg** image
+- **PKG Matrix** *(beta)*: app folders, game images and PKG files on every drive (internal and USB). Build a **.ffpkg** image
   (UFS2, for ShadowMountPlus), **backport** an image to your console's firmware, and build a **PS4 game as a .pkg**.
+  **PS1 / PS2 Classics**: a guide to build PS4 packages from your PS1 and PS2 games with the PS Classics emulators.
 - **Cheat engine**: turn cheats on and off from a game's page while the game runs (the original bytes come back
   when it stops). Databases from **GoldHEN** and **etaHEN PS5**, updated every week, only for your game version if
   you like, and your own cheat files.
 - **Saves**: background backups, back up everything now, export and import decrypted saves, edit them with a hex
   editor, backups on USB.
-- **Homebrew shop** with **third-party catalogues**: add any compatible catalogue from a link (NexGen and others),
-  install and update homebrew, and keep the payload catalogue up to date.
+- **Homebrew Shop**: homebrew apps and payloads from the homebrew catalogues (NexGen and others): install, update,
+  and keep the payload catalogue up to date.
+- **Shop for app catalogues**: PS Play reads the catalogue formats used by other PS5 download apps, such as
+  PegasusDL, PS Box, PippoLS, DLPS and Orbit Store. Put the catalogue files (JSON: `PS5.json`, `PS4.json`,
+  `PS3.json`, `PS2.json`, `PS1.json`) in `/data/ps_play/catalogs`, or upload them from your
+  phone with the web panel (**Altro > Cataloghi dello Shop**): PS Play checks them and reloads the Shop by itself.
+
+  > **Disclaimer**: PS Play does not include, host or link any catalogue or any content, and it does not say where
+  > to find them. Some third-party catalogues point to copyrighted games: downloading games you do not own may be
+  > illegal where you live. You are responsible for the catalogues you load and for what you download; use them only
+  > for content you have the right to use.
 - **Payloads**: send ELF payloads to the console's loader, with their own catalogue and updates.
-- **Emulators**: PS1 and PS2 Classics (with a guide), a PS3 emulator, retro systems and RetroAchievements.
+- **Emulators**: installers for **RetroArch** (Mihawk's build, 33+ cores), **PS5SX2** (PlayStation 2) and **PS5SX3**
+  (PlayStation 3), the cores of the other retro emulators, and RetroAchievements.
 - **File host downloads**: when a file host puts a browser check (Cloudflare) in front of a download, you pass it in
   the PS5 browser and a small scanner payload picks up the session, so the download continues in PS Play.
 
@@ -104,47 +126,85 @@ By **InsideMatrixDev**
 - Friends and friend requests, private chats (from friends, or from nobody), groups (public, private, with an
   invite code) and the global chat.
 - Reactions, replies, read receipts (that you can turn off), mute a chat, delete a chat for yourself only.
-- Share files with friends, see what they are playing ("what I am playing", optional), notifications.
+- **Share** with friends, a group or everyone: **saves, cheats, themes, settings and screenshots** of the console and
+  of PS Play. Limits, the same for everyone: **4 MB per file**; per user **10 shares and 20 MB a day**, **30 MB** in
+  all and one share every **2 minutes**; **50 MB per room** (5 pinned); **50 downloads a day**; shared files are kept
+  **30 days**.
+- See what your friends are playing ("what I am playing", optional), notifications.
 - The same account on the web at **social.insidematrixdev.com**, with "Your PS5": your console's web panel one tap away.
 - Community rules and moderation (reports, bans); the rules state what moderators can read.
 
 ### Phone, network and receivers
 - **Web panel** on your network: your games and what to continue, media, files (browse, upload, download),
   downloads, payloads, logs, the console's keyboard and pad, and app updates.
-- **Receivers**: DLNA renderer, AirPlay, Miracast and YouTube casting, each one on or off, with the console's
-  name on your network.
-- **Android Link**: your Android phone and the console working together.
+- **Receivers** *(beta)*: DLNA renderer, AirPlay, Miracast, YouTube Cast and FCast, each one on or off, with the
+  console's name on your network. The AirPlay receiver is forked from
+  [MirrorPSX](https://github.com/seregonwar/MirrorPSX) by seregonwar. Chromecast is *coming soon*.
+- **Android Link** *(beta)*: your Android phone and the console working together; it may not work with every
+  Android phone.
 - Network test and the network speed in the top bar.
+
+### Web browser *(work in progress)*
+- A web browser inside PS Play, **rebuilt from scratch**, and the PS5's own browser opened from PS Play; pages and compatibility are being
+  improved. **Any help is welcome**: issues and pull requests are open.
 
 ### Files, cloud storage and downloads
 - File manager for the internal storage and USB drives.
-- **OneDrive, Dropbox, Google Drive, MEGA, WebDAV / Nextcloud** and **Synology**.
+- **OneDrive, MEGA, WebDAV / Nextcloud** and **Synology**.
 - Downloads with a schedule, a speed limit, a mirror of your choice, simultaneous downloads and rest mode at the
   end; torrents built in, plus **qBittorrent, Transmission, Prowlarr, Jackett, Sonarr and Radarr**.
 
 ### Reading and photos
 - **MangaDex** (no account), **Komga, Kavita** and **Calibre-Web / OPDS** catalogues; ebooks and comics.
-- Photos from **Immich**, **NASA** and **Unsplash** (also for the screensaver and as wallpapers), the gallery of
+- Photos from **NASA** and **Unsplash** (also for the screensaver and as wallpapers), the gallery of
   your console and USB drives, IP cameras (RTSP and ONVIF).
 
 ### Home themes and personalisation
-- **Home themes**: PS5 (default), **PS4**, **PS3 XMB** (the wave, drawn or as video, in your colour),
-  **Xbox Series** (with ConsoleDash wallpapers), **Nintendo Switch** (dark or light), **Steam**, **Shelf** and
-  **Inferno** (fire colour and embers).
+- **Home themes**: PS5 (default), **PS4**, **Xbox Series** (with ConsoleDash wallpapers), **Nintendo Switch** (dark or
+  light), **Shelf** and **Inferno** (fire colour and embers).
 - **Theme settings** for every theme: background, accent colour, theme sounds, wallpaper dimming, accent tint and
-  dark edges, plus each theme's own options (tile size, card count, wave colour...).
+  dark edges, plus each theme's own options (tile size, card count, fire colour...).
 - **Icon packs**, icon size and shape, avatars, live wallpapers (particles, Matrix, music and more), ready-made
   themes and "save the look as a theme".
 
 ### Settings, accessibility and family
 - Settings in nine sections with search; every service's account in one place.
-- Screen reader, voice commands (hold L3, with your own commands), high contrast, text size and reduced motion.
+- **Voice commands** (hold L3): open any page or service, search YouTube, YouTube Music, Plex, radio, podcasts and
+  manga ("play ... on YouTube Music"), control the music and the volume, plus your own commands.
+- Screen reader, high contrast, text size and reduced motion.
 - Parental controls (PIN, daily video limit); controller vibration, adaptive triggers and light bar.
 
 ### System
 - In-app updates from the web panel, and **go back to the previous version** if an update misbehaves.
 - Settings backup and restore, storage overview, cache and covers, power saving and a photo screensaver.
 - Logs you can send to your phone in one tap, detailed logs, statistics and plugins.
+
+### Helpers: the small programs PS Play runs for you
+PS Play starts these helpers on the console through the ELF loader (port 9021), only when a feature needs them; they
+run apart from the app, so some of them keep working after PS Play is closed.
+
+| Helper | What it does |
+|---|---|
+| **ppdl** - background downloader | Downloads and torrents keep going when PS Play is closed (the same download engine as the app). |
+| **bckscan** - file host scanner | When a file host puts a browser check (Cloudflare) in front of a download, you pass it in the PS5 browser; the scanner picks up the session so the download starts in PS Play. |
+| **ppfs** - file service | Long copies, moves and archives run in the background. |
+| **ppd** - background music helper *(work in progress)* | Keeps the music going after PS Play closes; its sound does not come out of the console yet. |
+| **pprelaunch** - game watcher | Watches the game you started from PS Play: cheats at launch, play time, and PS Play back when the game closes. |
+| **psplay-cheats** - cheat engine | Applies the cheats you turn on to the running game, and restores the original bytes when it stops. |
+| **pp-savedata** - save tool | Exports and imports decrypted saves, for backups and the hex editor. |
+| **ppweb** - web panel keep-alive | Keeps the web panel reachable while PS Play is closed (when you turn it on in Settings). |
+| **ppcast** - receivers bridge *(beta)* | The AirPlay and Miracast receivers, in a separate GPL program. |
+| **ppadb** - Android Link *(beta)* | Connects the console to your Android devices. |
+| **ppbt** - Bluetooth helper | Bluetooth audio devices (from Ghost-tooth by StonedModder, GPL-3.0). |
+| **ppampr** - PKG Matrix back end *(beta)* | LZ4 compression and decompression through the console's AMPR unit, for images and packages. |
+| **ps5-backpork** - backport | Used by PKG Matrix to backport an image to your console's firmware. |
+| **PSPlay-Helper** - privileges helper | On consoles with kstuff and an ELF loader but without etaHEN, gives PS Play (and the apps PKG Matrix builds) the privileges they need. |
+| **mdns-helper** - Spotify pairing | Makes "PS Play" appear among the Spotify devices on your phone (an app on the console cannot answer that discovery itself). |
+| **PS5SX3 installer** | Installs the PS5SX3 PlayStation 3 emulator. |
+| **psvr2_probe / psvr2_enable** | Early tools of the PSVR2 project *(coming soon)*. |
+
+### Coming soon
+- **PSVR2**: a project in the works.
 
 ## Requirements
 - A PS5 with jailbreak and an **ELF loader** on port 9021 (needed by payloads, the cheat engine, saves and Spotify's
@@ -190,7 +250,7 @@ Most often it is the network or the source. Try another source or quality; for I
 helps. If it keeps happening, send the logs right after it happens.
 
 **Why is the browser slow on some sites?**
-The browser is **work in progress**: it uses a light engine that runs inside PS Play. Many modern sites are heavy;
+The browser is **work in progress**: it is being rebuilt from scratch inside PS Play. Many modern sites are heavy;
 the mobile versions of sites (the default) and reader mode help.
 
 **Can I add my own games and apps to the Shop?**
@@ -230,6 +290,8 @@ Planned (order may change):
 - [ ] **Shop**: automatic fallback to another source when a link is dead, and link checking before downloading.
 
 - [ ] **Browser**: faster pages and better compatibility.
+- [ ] **Background music helper**: the music's sound out of the console while PS Play is closed.
+- [ ] **PSVR2**: a project in the works.
 - [x] **OneDrive**: sign-in with PS Play's own Microsoft app.
 - [x] **Crash recovery**: reopen PS Play where you were after a crash, with a one-press log report.
 - [x] **First-start detection** of the console's tools (loader, ShadowMount, storage, network); the first-start setup that uses it is being finished.
@@ -265,7 +327,18 @@ PS Play stands on the work of many people. Thank you to all of them.
 | Stremio | [Stremio](https://www.stremio.com/) addon protocol | Stremio team |
 | Nuvio | [Nuvio Portable](https://github.com/Stuey-81/Nuvio-Portable) | Stuey-81 |
 | Video decoding | [FFmpeg](https://ffmpeg.org/) | FFmpeg developers |
+| Hardware video decoding *(beta)* | ProsperoWeb's sceVideodec2 decoder (it credits VLC for PS5, the Stremio PS5 port and OpenNOW-PS5) | ProsperoWeb developers |
+| Spotify Connect: session, pairing and browsing | [Spot5](https://github.com/abhi245y/spot5) | abhi245y |
 | Bluetooth (Ghost-tooth) |  by StonedModder (https://github.com/StonedModder?tab=repositories)
+
+### Receivers
+| Receiver | Origin | Author |
+|---|---|---|
+| AirPlay | forked from [MirrorPSX](https://github.com/seregonwar/MirrorPSX), built on [UxPlay](https://github.com/FDH2/UxPlay) | seregonwar; UxPlay contributors |
+| Miracast | PS Play's own (the ppcast bridge), after the Wi-Fi Display R2 and Microsoft MS-MICE specifications | InsideMatrixDev |
+| YouTube Cast | PS Play's own: DIAL discovery and YouTube's Lounge protocol | InsideMatrixDev |
+| FCast | PS Play's own receiver of the [FCast](https://fcast.org) protocol (MIT) | FUTO (protocol) |
+| DLNA renderer | PS Play's own UPnP AV MediaRenderer | InsideMatrixDev |
 
 ### Emulators
 | System | Core | Author |
@@ -276,14 +349,11 @@ PS Play stands on the work of many people. Thank you to all of them.
 | Atari 7800 | [ProSystem](https://github.com/libretro/prosystem-libretro) | Greg Stanton and contributors |
 | PlayStation | [PCSX ReARMed](https://github.com/libretro/pcsx_rearmed) | PCSX / PCSX ReARMed contributors |
 | PlayStation 2 (installer) | [PS5SX2](https://github.com/Swordpdf/PS5SX2), built on [PCSX2](https://github.com/PCSX2/pcsx2) | Swordpdf; PCSX2 team |
+| PlayStation 3 (installer) | PS5SX3 | PS5SX3 developers |
+| RetroArch (installer) | Mihawk's RetroArch for the PS5 (33+ cores), built on [RetroArch](https://github.com/libretro/RetroArch) | Mihawk; libretro team |
 
 ### Browser
-| Component | Origin | Author |
-|---|---|---|
-| Browser engine | [Northstar](https://github.com/nordstjernen-web/northstar-browser) | Andreas Røsdal |
-| JavaScript | [QuickJS](https://bellard.org/quickjs/) | Fabrice Bellard, Charlie Gordon |
-| HTML parser | [lexbor](https://github.com/lexbor/lexbor) | lexbor contributors |
-| Networking | [libcurl](https://curl.se/), [OpenSSL](https://www.openssl.org/) | curl and OpenSSL projects |
+The browser is being rebuilt from scratch for PS Play (*work in progress*); its components will be credited here.
 
 ### Platform and tools
 | Component | Origin | Author |
@@ -301,7 +371,7 @@ PS Play stands on the work of many people. Thank you to all of them.
 ### Online services
 PS Play talks to the public APIs of many services (YouTube, Twitch, Kick, Dailymotion, Odysee, Jellyfin, Plex, Emby,
 Trakt, Simkl, AniList, MDBList, Real-Debrid, AllDebrid, TorBox, Premiumize, Last.fm, ListenBrainz, Jamendo, Radio
-Browser, Podcast Index, gPodder, MangaDex, Project Gutenberg, OneDrive, Google Drive, Dropbox, MEGA, Steam, Xbox,
+Browser, Podcast Index, gPodder, MangaDex, Project Gutenberg, OneDrive, MEGA, Steam, Xbox,
 NVIDIA). All trademarks belong to their owners; PS Play is not affiliated with or endorsed by any of them.
 
 > The full list of components, versions and licence texts is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
@@ -313,7 +383,7 @@ If PS Play is useful to you, you can support its development:
 
 ## Licences
 PS Play includes components under different licences, among them **GPL-3.0** (cspot / Spot5, OpenNOW, PSBox Cloud
-Gaming, Northstar), MIT, BSD and OFL (fonts). Where GPL code is included, PS Play's corresponding source code is
+Gaming, UxPlay in the ppcast receiver bridge, ProsperoWeb's hardware video decoder), MIT, BSD and OFL (fonts). Where GPL code is included, PS Play's corresponding source code is
 published under the same terms. <!-- TODO: PS Play's own licence -->
 
 ## Disclaimer
