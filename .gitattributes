@@ -1,1 +1,1 @@
-LAPY47000/eboot.bin filter=lfs diff=lfs merge=lfs -text
+PSPL47000/eboot.bin filter=lfs diff=lfs merge=lfs -text

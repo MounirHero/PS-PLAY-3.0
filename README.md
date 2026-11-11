@@ -154,17 +154,17 @@ By **InsideMatrixDev**
 - **Tested firmware: 4.00 to 13.60.**
 
 ## Installation
-- **As an image**: copy `LAPY47000.ffpkg` (from the release) into `/data/homebrew/`; ShadowMountPlus mounts it.
-- **As a folder**: copy the `LAPY47000` folder (from the release, or from this repository) to the console.
+- **As an image**: copy `PSPL47000.ffpkg` (from the release) into `/data/homebrew/`; ShadowMountPlus mounts it.
+- **As a folder**: copy the `PSPL47000` folder (from the release, or from this repository) to the console.
 - **Updates**: upload the new image from the web panel (Update), then exit PS Play from its Home (Circle, Exit) and
   open it again, so the new image is mounted.
 - Your data lives in `/data/ps_play` (settings, accounts, caches and logs).
 
-### The app folder in this repository (`LAPY47000/`)
+### The app folder in this repository (`PSPL47000/`)
 The folder is the app as it goes on the console. `eboot.bin` is stored with Git LFS: clone with git-lfs, or download
 it from its own page.
 `sce_module/libc.prx` is **not included**: it is a Sony system module and cannot be redistributed here. Copy it into
-`LAPY47000/sce_module/` from another PS5 homebrew app that ships one, then copy the folder to the console.
+`PSPL47000/sce_module/` from another PS5 homebrew app that ships one, then copy the folder to the console.
 
 ## FAQ
 
