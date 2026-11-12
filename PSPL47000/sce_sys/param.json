@@ -15,7 +15,7 @@
   "conceptId": "01475",
   "contentBadgeType": 1,
   "contentId": "UP9000-PSPL47000_00-PSPLAY3000000000",
-  "contentVersion": "01.105.000",
+  "contentVersion": "01.106.000",
   "downloadDataSize": 256,
   "kernel": {
     "cpuPageTableSize": 268435456,
